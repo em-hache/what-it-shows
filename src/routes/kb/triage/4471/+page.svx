@@ -12,9 +12,8 @@ signature: v1.eyJzdWIiOiIxMjA3NyIsImF1ZCI6ImNoYWxsZW5nZTp3aGF0LWl0LXNob3dzIiwiaW
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 </script>
 
-#4471 was marked **known** with one fix queued. The data says that is one ticket for at least two
-bugs, and five reports that may be a third. Each problem below has its own ticket in
-[em-hache/what-it-shows](https://github.com/em-hache/what-it-shows/issues).
+#4471 was marked **known** with one fix queued. The data says it holds two bugs. Each has its own
+ticket in [em-hache/what-it-shows](https://github.com/em-hache/what-it-shows/issues).
 
 ## The problems
 
@@ -22,10 +21,9 @@ bugs, and five reports that may be a third. Each problem below has its own ticke
 | --- | ---: | --- |
 | Day-first dates read month first (parser) | 379 | [#1](https://github.com/em-hache/what-it-shows/issues/1) |
 | Booking-v3 hint shows MM/DD to day-first tenants | 33 | [#2](https://github.com/em-hache/what-it-shows/issues/2) |
-| Not a month flip: one-day shifts, time zone, early invite | 5 | [#3](https://github.com/em-hache/what-it-shows/issues/3) |
 
-The first two rows add up to 412, the number merged into #4471. The 5 reports in row three are
-inside those 379, so the counts above overlap by 5.
+The two rows add up to 412, the number merged into #4471. Five of the 379 read as one-day shifts
+rather than month flips. They are counted in ticket #1 and need a check against the fix.
 
 <Callout kind="warn">
 A fix for the parser does not fix the booking-v3 form. The form tells tenants to type MM/DD, so a
@@ -43,6 +41,6 @@ reports as `parser`.
 
 - Fix the parser to read day-first locales day first (ticket 1).
 - Change the booking-v3 hint for day-first tenants (ticket 2).
-- Triage the 5 reports in ticket 3 before they are closed with the others.
+- Check the five one-day reports (R-41202, R-41209, R-41236, R-41344, R-41620) against the parser fix.
 
 <RenderStamp signature="v1.eyJzdWIiOiIxMjA3NyIsImF1ZCI6ImNoYWxsZW5nZTp3aGF0LWl0LXNob3dzIiwiaWF0IjoxNzk0OTM5MDk3LCJleHAiOjE3OTUwMjU0OTd9.4lEneL-wMtBePAL8Uqy4cuX9nuXl4FFoI-qzEg2rRII" />

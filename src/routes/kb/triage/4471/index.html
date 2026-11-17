@@ -29,7 +29,7 @@
     <p class="meta"><span>owner <b>support desk</b></span> · <span>living</span> · <span>reviewed 2026-10-05</span></p>
   </header>
   <main>
-    <p>#4471 was marked <strong>known</strong> with one fix queued. The data says that is one ticket for at least two bugs, and five reports that may be a third. Each problem below has its own ticket in <a href="https://github.com/em-hache/what-it-shows/issues">em-hache/what-it-shows</a>.</p>
+    <p>#4471 was marked <strong>known</strong> with one fix queued. The data says it holds two bugs. Each has its own ticket in <a href="https://github.com/em-hache/what-it-shows/issues">em-hache/what-it-shows</a>.</p>
 
     <h2>The problems</h2>
     <table>
@@ -37,10 +37,9 @@
       <tbody>
         <tr><td>Day-first dates read month first (parser)</td><td>379</td><td><a href="https://github.com/em-hache/what-it-shows/issues/1">#1</a></td></tr>
         <tr><td>Booking-v3 hint shows MM/DD to day-first tenants</td><td>33</td><td><a href="https://github.com/em-hache/what-it-shows/issues/2">#2</a></td></tr>
-        <tr><td>Not a month flip: one-day shifts, time zone, early invite</td><td>5</td><td><a href="https://github.com/em-hache/what-it-shows/issues/3">#3</a></td></tr>
       </tbody>
     </table>
-    <p>The first two rows add up to 412, the number merged into #4471. The 5 reports in row three are inside those 379, so the counts above overlap by 5.</p>
+    <p>The two rows add up to 412, the number merged into #4471. Five of the 379 read as one-day shifts rather than month flips. They are counted in ticket #1 and need a check against the fix.</p>
 
     <aside>A fix for the parser does not fix the booking-v3 form. The form tells tenants to type MM/DD, so a parser fix alone leaves 33 reports open.</aside>
 
@@ -51,7 +50,7 @@
     <ul>
       <li>Fix the parser to read day-first locales day first (ticket 1).</li>
       <li>Change the booking-v3 hint for day-first tenants (ticket 2).</li>
-      <li>Triage the 5 reports in ticket 3 before they are closed with the others.</li>
+      <li>Check the five one-day reports (R-41202, R-41209, R-41236, R-41344, R-41620) against the parser fix.</li>
     </ul>
   </main>
   <p class="stamp">desk ref <b>DR-6DKS-0THE</b></p>
