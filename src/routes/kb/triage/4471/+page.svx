@@ -4,7 +4,7 @@ title: '#4471 · what the 412 reports are, by problem'
 owner: support desk
 status: living
 reviewed: 2026-10-05
-signature: Elena Moreno
+signature: v1.eyJzdWIiOiIxMjA3NyIsImF1ZCI6ImNoYWxsZW5nZTp3aGF0LWl0LXNob3dzIiwiaWF0IjoxNzk0OTM5MDk3LCJleHAiOjE3OTUwMjU0OTd9.4lEneL-wMtBePAL8Uqy4cuX9nuXl4FFoI-qzEg2rRII
 ---
 
 <script>
@@ -45,4 +45,4 @@ reports as `parser`.
 - Change the booking-v3 hint for day-first tenants (ticket 2).
 - Triage the 5 reports in ticket 3 before they are closed with the others.
 
-<RenderStamp signature="Elena Moreno" />
+<RenderStamp signature="v1.eyJzdWIiOiIxMjA3NyIsImF1ZCI6ImNoYWxsZW5nZTp3aGF0LWl0LXNob3dzIiwiaWF0IjoxNzk0OTM5MDk3LCJleHAiOjE3OTUwMjU0OTd9.4lEneL-wMtBePAL8Uqy4cuX9nuXl4FFoI-qzEg2rRII" />
